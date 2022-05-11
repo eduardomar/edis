@@ -1,0 +1,22 @@
+{
+  "name": "edis",
+  "version": "1.0.0",
+  "description": "Write/Read EDIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src",
+    "dev": "nodemon src"
+  },
+  "author": "Lalo",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.0",
+    "moment": "^2.29.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
