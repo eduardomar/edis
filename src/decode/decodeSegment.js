@@ -95,7 +95,7 @@ const writeFile = (dir, fileName, data) => {
   }
 };
 
-module.exports = (key, segment, schema, dir) => {
+module.exports = (segment, schema, key, dir) => {
   if (segment?.length && schema?.length) {
     const output = translateSegment(segment, schema);
 

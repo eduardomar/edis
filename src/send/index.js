@@ -13,12 +13,19 @@ module.exports = async () => {
 
   debug('Add the edis (txt) in the folder → %s', pathEdisIn);
   chokidar.watch(pathEdisIn, {}).on('add', async pathFile => {
-    const debugExample = debug.extend(path.basename(pathFile));
+    const fileName = path.basename(pathFile);
+    const lastIndex = fileName.lastIndexOf('.');
+    const name = fileName.substring(
+      0,
+      lastIndex > -1 ? lastIndex : fileName.length,
+    );
+
+    const debugExample = debug.extend(fileName);
     const text = fs.readFileSync(pathFile, { encoding: 'utf-8' });
 
     debugExample('Sending...');
     // text.match(/.{1,80}/g).map(str => str.padEnd(80, ' '));
-    await send(text);
+    await send(JSON.stringify({ name, raw: text }));
     debugExample('SEND!');
 
     debugExample('Deleting file...');

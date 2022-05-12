@@ -14,7 +14,9 @@ const { TYPE, PATH_EDIS_IN, PATH_EDIS_OUT } = process.env;
 (async () => {
   if (TYPE === 'TRANSLATOR') {
     await receive(async edi => {
-      decode(edi);
+      debug('Dispatching EDI...');
+      await decode(edi);
+      debug('Finish him off! ☠');
     });
   } else if (TYPE === 'SENDER') {
     await send();
