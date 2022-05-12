@@ -1,0 +1,90 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 4,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "“PG20”"
+  },
+  {
+    "name": "entityAddress2",
+    "sec": 2,
+    "status": "C",
+    "start": 5,
+    "end": 36,
+    "filler": " ",
+    "align": "Left",
+    "max": 32,
+    "description": "Address Line 2 of the entity. If an Entity Address2 requires additional space, continue in a PG60 record with Qualifier Code “AD2”."
+  },
+  {
+    "name": "entityApartmentNumberSuiteNumber",
+    "sec": 3,
+    "status": "C",
+    "start": 37,
+    "end": 41,
+    "filler": " ",
+    "align": "Left",
+    "max": 5,
+    "description": "Apartment/Suite number of the entity."
+  },
+  {
+    "name": "entityCity",
+    "sec": 4,
+    "status": "M",
+    "start": 42,
+    "end": 62,
+    "filler": " ",
+    "align": "Left",
+    "max": 21,
+    "description": "City of the entity. If an Entity City requires additional space, continue in a PG60 record with Qualifier Code “ECI”."
+  },
+  {
+    "name": "entityStateProvince",
+    "sec": 5,
+    "status": "C",
+    "start": 63,
+    "end": 65,
+    "filler": " ",
+    "align": "Left",
+    "max": 3,
+    "description": "Refer to CBP’s ACE CATAIR Appendix B (https://www.cbp.gov/document/guidance/appendix-b-valid-codes-0) for valid codes."
+  },
+  {
+    "name": "entityCountry",
+    "sec": 6,
+    "status": "M",
+    "start": 66,
+    "end": 67,
+    "filler": " ",
+    "align": "Left",
+    "max": 2,
+    "description": "Refer to CBP’s ACE CATAIR Appendix B (https://www.cbp.gov/document/guidance/appendix-b-valid-codes-0) for valid codes."
+  },
+  {
+    "name": "entityZipPostalCode",
+    "sec": 7,
+    "status": "C",
+    "start": 68,
+    "end": 76,
+    "filler": " ",
+    "align": "Left",
+    "max": 9,
+    "description": "Zip/Postal Code of the entity."
+  },
+  {
+    "name": "filler1",
+    "sec": 8,
+    "status": "M",
+    "start": 77,
+    "end": 80,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "Space fill"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 4,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "“PG19”"
+  },
+  {
+    "name": "entityRoleCode",
+    "sec": 2,
+    "status": "M",
+    "start": 5,
+    "end": 7,
+    "filler": " ",
+    "align": "Left",
+    "max": 3,
+    "description": "Code identifying the role of the entity. For example, MF. Each entity role code can only be transmitted once per PGA line."
+  },
+  {
+    "name": "entityIdentificationCode",
+    "sec": 3,
+    "status": "C",
+    "start": 8,
+    "end": 10,
+    "filler": " ",
+    "align": "Left",
+    "max": 3,
+    "description": "Code identifying the Entity Identification. For example: 16 (DUNS #), 47 (FEI#). Mandatory, if Entity Number is entered."
+  },
+  {
+    "name": "entityNumber",
+    "sec": 4,
+    "status": "C",
+    "start": 11,
+    "end": 25,
+    "filler": " ",
+    "align": "Left",
+    "max": 15,
+    "description": "Identifying Number (DUNS or FEI) for the associated Entity Identification Code. Mandatory if Entity Identification Code is provided"
+  },
+  {
+    "name": "entityName",
+    "sec": 5,
+    "status": "M",
+    "start": 26,
+    "end": 57,
+    "filler": " ",
+    "align": "Left",
+    "max": 32,
+    "description": "The name of the entity is required. If Entity Name requires additional space, continue in a PG60 record with Qualifier Code “ENA”. Refer to validation criteria below."
+  },
+  {
+    "name": "entityAddress1",
+    "sec": 6,
+    "status": "M",
+    "start": 58,
+    "end": 80,
+    "filler": " ",
+    "align": "Left",
+    "max": 23,
+    "description": "The address of the entity is required. If Entity Address1 requires additional space, continue in a PG60 record with Qualifier Code “AD1”."
+  }
+]

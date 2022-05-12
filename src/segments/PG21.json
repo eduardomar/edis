@@ -1,0 +1,57 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 4,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "“PG21”"
+  },
+  {
+    "name": "individualQualifier",
+    "sec": 2,
+    "status": "M",
+    "start": 5,
+    "end": 7,
+    "filler": " ",
+    "align": "Left",
+    "max": 3,
+    "description": "Identify the type of party or facility the Individual represents. Only “FD1” and “PK” are allowed values."
+  },
+  {
+    "name": "individualName",
+    "sec": 3,
+    "status": "M",
+    "start": 8,
+    "end": 30,
+    "filler": " ",
+    "align": "Left",
+    "max": 23,
+    "description": "Name of the Individual. If the name exceeds the length, continue in a PG60 record with Qualifier Code “INA”."
+  },
+  {
+    "name": "telephoneNumberOfTheIndividual",
+    "sec": 4,
+    "status": "M",
+    "start": 31,
+    "end": 45,
+    "filler": " ",
+    "align": "Left",
+    "max": 15,
+    "description": "Telephone number of the Individual.\nFor example, (713)555-8765 in US or (+65)9052-3529 in Singapore"
+  },
+  {
+    "name": "emailAddressForTheIndividual",
+    "sec": 5,
+    "status": "M",
+    "start": 46,
+    "end": 80,
+    "filler": " ",
+    "align": "Left",
+    "max": 35,
+    "description": "Email Address of the individual. If the Email Address exceeds the length, continue in a PG60 record with Qualifier Code “EMA”."
+  }
+]

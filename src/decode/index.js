@@ -7,7 +7,7 @@ const segmentsSchema = require('../segments');
 const decodeSegment = require('./decodeSegment');
 
 module.exports = async edi => {
-  const folderName = moment().format('dddd, MMMM Do YYYY, h-mm-ss a');
+  const folderName = moment().format('dddd, MMMM Do YYYY, hh-mm-ss a');
   const dirEdi = path.join(__dirname, '../../edis', folderName);
   fs.mkdirSync(dirEdi, { recursive: true });
   debug('%s', dirEdi);
