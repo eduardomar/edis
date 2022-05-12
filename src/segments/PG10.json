@@ -1,0 +1,24 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 4,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "“PG10”"
+  },
+  {
+    "name": "commodityCharacteristicDescription",
+    "sec": 2,
+    "status": "M",
+    "start": 24,
+    "end": 80,
+    "filler": " ",
+    "align": "Left",
+    "max": 57,
+    "description": "Common, market, usual name; free form invoice description; not product code description. For examples, see Appendix A: Use of PG10 Record"
+  }
+]

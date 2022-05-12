@@ -44,10 +44,10 @@ const createConnection = async () => {
 
 module.exports = async exchange => {
   const connection = await createConnection();
-  if (!connection) return;
+  if (!connection) return {};
 
-  const channel = await connection.createChannel();
-  if (!channel) return;
+  const channel = await connection.createChannel?.();
+  if (!channel) return {};
 
   await channel.assertExchange(exchange, 'topic', {
     durable: true,
