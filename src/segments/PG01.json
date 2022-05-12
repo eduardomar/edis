@@ -1,0 +1,101 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 4,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "“PG01”"
+  },
+  {
+    "name": "pgaLineNumber",
+    "sec": 2,
+    "status": "M",
+    "start": 5,
+    "end": 7,
+    "filler": " ",
+    "align": "Left",
+    "max": 3,
+    "description": "Begin with \"001\" and sequentially increment the line number on subsequent PG01 records, if applicable."
+  },
+  {
+    "name": "governmentAgencyCode",
+    "sec": 3,
+    "status": "M",
+    "start": 8,
+    "end": 10,
+    "filler": " ",
+    "align": "Left",
+    "max": 3,
+    "description": "“FDA”"
+  },
+  {
+    "name": "governmentAgencyProgramCode",
+    "sec": 4,
+    "status": "C",
+    "start": 11,
+    "end": 13,
+    "filler": " ",
+    "align": "Left",
+    "max": 3,
+    "description": "“BIO”"
+  },
+  {
+    "name": "governmentAgencyProcessingCode",
+    "sec": 5,
+    "status": "C",
+    "start": 14,
+    "end": 16,
+    "filler": " ",
+    "align": "Left",
+    "max": 3,
+    "description": "Allowed values for Biologics sub-types are:\n\tALG, BBA, BDP, BLD, BLO, CGT, HCT, PVE, VAC, XEN"
+  },
+  {
+    "name": "intendedUseCode",
+    "sec": 6,
+    "status": "C",
+    "start": 42,
+    "end": 57,
+    "filler": " ",
+    "align": "Left",
+    "max": 16,
+    "description": "Refer to the Intended Use Codes table below for allowed values"
+  },
+  {
+    "name": "intendedUseDescription",
+    "sec": 7,
+    "status": "O",
+    "start": 58,
+    "end": 78,
+    "filler": " ",
+    "align": "Left",
+    "max": 21,
+    "description": "N/A for FDA lines"
+  },
+  {
+    "name": "correctionIndicator",
+    "sec": 8,
+    "status": "O",
+    "start": 79,
+    "end": 79,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "For future use"
+  },
+  {
+    "name": "disclaimer",
+    "sec": 9,
+    "status": "C",
+    "start": 80,
+    "end": 80,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "\n\t“A” (= product is not regulated by this agency) indicating that there is no agency declaration requirement. This field is left blank for no disclaimer.\n\t“F” indicating that the product is manufactured in any state of the US, the District of Columbia, or Puerto Rico and sourced directly to the warehouse without ever leaving the US. May only be used for FDA on Entry Type 21.\n\tNo other codes are accepted"
+  }
+]

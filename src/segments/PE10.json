@@ -1,0 +1,145 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 4,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "Must always equal PE10."
+  },
+  {
+    "name": "actionCode",
+    "sec": 2,
+    "status": "M",
+    "start": 5,
+    "end": 5,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "A code representing the action type"
+  },
+  {
+    "name": "filingType",
+    "sec": 3,
+    "status": "M",
+    "start": 6,
+    "end": 6,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "A code representing the type of Prior Notice being submitted"
+  },
+  {
+    "name": "referenceQualifierCode",
+    "sec": 4,
+    "status": "M",
+    "start": 7,
+    "end": 9,
+    "filler": " ",
+    "align": "Left",
+    "max": 3,
+    "description": "Code that defines the Reference Identifier Number being provided"
+  },
+  {
+    "name": "filerOrIssuerCodeForReferenceIdentifier",
+    "sec": 5,
+    "status": "C",
+    "start": 10,
+    "end": 13,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "The filer or issuer code associated with the Reference Identifier Number. The issuer code is representing the issuer of the bill of lading. Space fill if Reference Qualifier codes AWB or FTZ or INB are entered in positions 7-9."
+  },
+  {
+    "name": "referenceIdentifierNumber",
+    "sec": 6,
+    "status": "M",
+    "start": 14,
+    "end": 49,
+    "filler": " ",
+    "align": "Left",
+    "max": 36,
+    "description": "The unique identifying number associated to the Reference Qualifier Code. For a bill of lading number it is the number as listed on the manifest or the In-Bond number. If the number is less than 36 positions, it is left justified. Do not include spaces, hyphens, slashes or other special characters. Include the AWB prefix for Air Shipments for Master/Simple Bill of Lading Numbers."
+  },
+  {
+    "name": "filerDefinedReferenceNumber",
+    "sec": 7,
+    "status": "O",
+    "start": 50,
+    "end": 58,
+    "filler": " ",
+    "align": "Left",
+    "max": 9,
+    "description": "Internal number used by trade for their purposes. Allows them to correlate data back to their systems, as applicable."
+  },
+  {
+    "name": "filler1",
+    "sec": 8,
+    "status": "M",
+    "start": 59,
+    "end": 59,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "Space fill"
+  },
+  {
+    "name": "billTypeIndicator",
+    "sec": 9,
+    "status": "C",
+    "start": 60,
+    "end": 60,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "Code identifying the type of Bill of Lading Number. Valid codes are:\n\tR = Regular / Simple Bill of Lading; Shipment Control Number (Mode Truck)\n\tM = Master Bill of Lading; Shipment Control Number (Mode Truck)\n\tT = Express Carrier Tracking Number (air only)"
+  },
+  {
+    "name": "carrier",
+    "sec": 10,
+    "status": "C",
+    "start": 61,
+    "end": 64,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "A code identifying the carrier. SCAC or IATA. Use of ‘UNKN’ as a carrier code is not allowed."
+  },
+  {
+    "name": "entryType",
+    "sec": 11,
+    "status": "C",
+    "start": 65,
+    "end": 66,
+    "filler": " ",
+    "align": "Left",
+    "max": 2,
+    "description": "A code representing the entry type. Valid entry type codes are listed in Appendix B of the ACE CATAIR publication."
+  },
+  {
+    "name": "modeOfTransportationMOTCode",
+    "sec": 12,
+    "status": "C",
+    "start": 67,
+    "end": 68,
+    "filler": " ",
+    "align": "Left",
+    "max": 2,
+    "description": "A code representing the mode of transportation. Valid mode of transportation codes are listed in Appendix B of the ACE CATAIR publication."
+  },
+  {
+    "name": "envelopeNumber",
+    "sec": 13,
+    "status": "C",
+    "start": 69,
+    "end": 80,
+    "filler": " ",
+    "align": "Left",
+    "max": 12,
+    "description": "The number assigned to the PE submission by CBP"
+  }
+]

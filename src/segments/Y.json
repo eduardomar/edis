@@ -1,0 +1,90 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 1,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "Always Y"
+  },
+  {
+    "name": "filler1",
+    "sec": 2,
+    "status": "M",
+    "start": 2,
+    "end": 3,
+    "filler": " ",
+    "align": "Left",
+    "max": 2,
+    "description": "Space fill."
+  },
+  {
+    "name": "portCode",
+    "sec": 3,
+    "status": "M",
+    "start": 4,
+    "end": 7,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "The code for the U.S. port where the enclosed transaction(s) are to be ‘processed’."
+  },
+  {
+    "name": "filerCode",
+    "sec": 4,
+    "status": "M",
+    "start": 8,
+    "end": 10,
+    "filler": " ",
+    "align": "Left",
+    "max": 3,
+    "description": "Filer’s identification code (as assigned by CBP)."
+  },
+  {
+    "name": "appCode",
+    "sec": 5,
+    "status": "M",
+    "start": 11,
+    "end": 12,
+    "filler": " ",
+    "align": "Left",
+    "max": 2,
+    "description": "A code that identifies the type of transaction data within the block."
+  },
+  {
+    "name": "filler2",
+    "sec": 6,
+    "status": "M",
+    "start": 13,
+    "end": 44,
+    "filler": " ",
+    "align": "Left",
+    "max": 32,
+    "description": "Space fill. Number of input images (i.e., records) submitted in the block. The count does not include the B-Record or the Y-Record. Space fill."
+  },
+  {
+    "name": "officeCode",
+    "sec": 7,
+    "status": "C",
+    "start": 45,
+    "end": 46,
+    "filler": " ",
+    "align": "Left",
+    "max": 2,
+    "description": "A code agreed upon by the Filer and CBP representing a specific Filer ‘office’ (or sub-location). Space fill if not used."
+  },
+  {
+    "name": "filler2",
+    "sec": 8,
+    "status": "C",
+    "start": 47,
+    "end": 80,
+    "filler": " ",
+    "align": "Left",
+    "max": 34,
+    "description": "Space fill."
+  }
+]

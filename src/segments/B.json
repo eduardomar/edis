@@ -1,0 +1,145 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 1,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "Always B"
+  },
+  {
+    "name": "filler1",
+    "sec": 2,
+    "status": "M",
+    "start": 2,
+    "end": 3,
+    "filler": " ",
+    "align": "Left",
+    "max": 2,
+    "description": "Space fill."
+  },
+  {
+    "name": "portCode",
+    "sec": 3,
+    "status": "M",
+    "start": 4,
+    "end": 7,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "The code for the U.S. port where the enclosed transaction(s) are to be ‘processed’."
+  },
+  {
+    "name": "filerCode",
+    "sec": 4,
+    "status": "M",
+    "start": 8,
+    "end": 10,
+    "filler": " ",
+    "align": "Left",
+    "max": 3,
+    "description": "Filer’s identification code (as assigned by CBP)."
+  },
+  {
+    "name": "appCode",
+    "sec": 5,
+    "status": "M",
+    "start": 11,
+    "end": 12,
+    "filler": " ",
+    "align": "Left",
+    "max": 2,
+    "description": "A code that identifies the type of transaction data within the block."
+  },
+  {
+    "name": "filler2",
+    "sec": 6,
+    "status": "M",
+    "start": 13,
+    "end": 44,
+    "filler": " ",
+    "align": "Left",
+    "max": 32,
+    "description": "Space fill."
+  },
+  {
+    "name": "officeCode",
+    "sec": 7,
+    "status": "C",
+    "start": 45,
+    "end": 46,
+    "filler": " ",
+    "align": "Left",
+    "max": 2,
+    "description": "A code agreed upon by the Filer and CBP representing a specific Filer ‘office’ (or sub-location). Space fill if not used."
+  },
+  {
+    "name": "remotePortCode",
+    "sec": 8,
+    "status": "C",
+    "start": 47,
+    "end": 50,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "The code for the U.S. port location of the Remote Preparer. Space fill if not a remotely prepared block."
+  },
+  {
+    "name": "remoteFilerCode",
+    "sec": 9,
+    "status": "C",
+    "start": 51,
+    "end": 53,
+    "filler": " ",
+    "align": "Left",
+    "max": 3,
+    "description": "Remote Filer’s (Preparer) identification code (as assigned by CBP). Space fill if not a remotely prepared block."
+  },
+  {
+    "name": "remoteOfficeCode",
+    "sec": 10,
+    "status": "C",
+    "start": 54,
+    "end": 55,
+    "filler": " ",
+    "align": "Left",
+    "max": 2,
+    "description": "A code agreed upon by the Remote Preparer and CBP representing a specific Preparer ‘office’ (or sub-location). Space fill if not used or not a remotely prepared block."
+  },
+  {
+    "name": "remoteFiledIndicator",
+    "sec": 11,
+    "status": "C",
+    "start": 56,
+    "end": 56,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "An indication that the block has been prepared and filed remotely in accordance with the Broker District permit rules as set forth in CBP regulation. 1 = Remote Entry Submission. Space fill if not used or not a remote submission."
+  },
+  {
+    "name": "filler3",
+    "sec": 12,
+    "status": "M",
+    "start": 57,
+    "end": 59,
+    "filler": " ",
+    "align": "Left",
+    "max": 3,
+    "description": "Space fill."
+  },
+  {
+    "name": "preparerInternalNo",
+    "sec": 13,
+    "status": "O",
+    "start": 60,
+    "end": 80,
+    "filler": " ",
+    "align": "Right",
+    "max": 21,
+    "description": "Provided for the Filer/Preparer’s internal use. These positions are returned, unmodified, in the B-Record returned in the response to the block. Space fill if not used."
+  }
+]

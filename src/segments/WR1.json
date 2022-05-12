@@ -1,0 +1,145 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 3,
+    "filler": " ",
+    "align": "Left",
+    "max": 3,
+    "description": "Must always equal WR1."
+  },
+  {
+    "name": "filler1",
+    "sec": 2,
+    "status": "M",
+    "start": 4,
+    "end": 7,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "Space fill."
+  },
+  {
+    "name": "filerCode",
+    "sec": 3,
+    "status": "C",
+    "start": 8,
+    "end": 10,
+    "filler": " ",
+    "align": "Left",
+    "max": 3,
+    "description": "A unique code assigned by CBP to all active entry document filers. The filer code occupies the first three positions of an entry number regardless of where the entry is filed. The filer code must be the same as the filer code in the block control header record (Record Identifier B). This code is mandatory when querying entry status."
+  },
+  {
+    "name": "filerEntryNumber",
+    "sec": 4,
+    "status": "C",
+    "start": 11,
+    "end": 19,
+    "filler": " ",
+    "align": "Right",
+    "max": 9,
+    "description": "The number assigned to the entry. For additional information on valid entry number formats, refer to ACE CATAIR Appendix E Valid Entry Numbers. This field is mandatory when querying entry status. The number must be right justified."
+  },
+  {
+    "name": "inBondNumber",
+    "sec": 5,
+    "status": "C",
+    "start": 20,
+    "end": 31,
+    "filler": " ",
+    "align": "Left",
+    "max": 12,
+    "description": "The in-bond number, also called IT number. Left justify."
+  },
+  {
+    "name": "issuerCodeBOL",
+    "sec": 6,
+    "status": "C",
+    "start": 32,
+    "end": 35,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "A code representing the Standard Alpha Carrier Code (SCAC) of the party who actually issued the bill of lading or the two or three character code of the air carrier issuing the master air waybill. This code is mandatory when the Bill of Lading Number is used and the mode of transportation is Ocean, Rail and Truck or when the in-bond number is used and the mode of transportation is Air."
+  },
+  {
+    "name": "billOfLadingNumber",
+    "sec": 7,
+    "status": "C",
+    "start": 36,
+    "end": 47,
+    "filler": " ",
+    "align": "Left",
+    "max": 12,
+    "description": "The bill of lading number. Left justify. This field is requested when querying an ocean, rail or truck bill and is mandatory when SCAC is used."
+  },
+  {
+    "name": "airWayBillNumber",
+    "sec": 8,
+    "status": "C",
+    "start": 48,
+    "end": 58,
+    "filler": " ",
+    "align": "Left",
+    "max": 11,
+    "description": "The first three positions identify the air carrier, the next eight are a sequential number. If the master or simple air waybill is being used to move the cargo in-bond the last position is a check digit based on MOD 7."
+  },
+  {
+    "name": "houseAWBNumber",
+    "sec": 9,
+    "status": "O",
+    "start": 59,
+    "end": 70,
+    "filler": " ",
+    "align": "Left",
+    "max": 12,
+    "description": "The house air waybill that is associated to an Air Waybill number and may be used to define the query. It may only be sent in conjunction with an Air Waybill Number."
+  },
+  {
+    "name": "requestRelatedBOL",
+    "sec": 10,
+    "status": "O",
+    "start": 71,
+    "end": 71,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "If querying an Ocean bill with both the Issuer Code of Bill Number and Bill Number provided, placing a “Y” in this column will return related House or Master Bills in the response. Otherwise only the Bill in the Issuer Code of Bill Number and Bill Number is returned."
+  },
+  {
+    "name": "requestBOLAndEntryInformation",
+    "sec": 11,
+    "status": "O",
+    "start": 72,
+    "end": 72,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "If querying an Entry status placing a “Y” in this column will return entry status for the entry being queried and bill of lading status for any master bills, house bills and or in-bond numbers found in the entry."
+  },
+  {
+    "name": "limitOutputOption",
+    "sec": 12,
+    "status": "O",
+    "start": 73,
+    "end": 73,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "Optional data element to limit the number of notifications returned in the query."
+  },
+  {
+    "name": "filler2",
+    "sec": 13,
+    "status": "M",
+    "start": 74,
+    "end": 80,
+    "filler": " ",
+    "align": "Left",
+    "max": 7,
+    "description": "Space fill."
+  }
+]

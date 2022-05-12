@@ -105,3 +105,4 @@ dist
 
 # User
 public/requests
+edis/

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 4,
+    "filler": " ",
+    "align": "Left",
+    "max": 4
+  },
+  {
+    "name": "itemType",
+    "sec": 2,
+    "status": "M",
+    "start": 5,
+    "end": 5,
+    "filler": " ",
+    "align": "Left",
+    "max": 1
+  },
+  {
+    "name": "productCodeQualifier",
+    "sec": 3,
+    "status": "M",
+    "start": 6,
+    "end": 9,
+    "filler": " ",
+    "align": "Left",
+    "max": 4
+  },
+  {
+    "name": "productCodeNumber",
+    "sec": 4,
+    "status": "M",
+    "start": 10,
+    "end": 28,
+    "filler": " ",
+    "align": "Left",
+    "max": 19
+  }
+]

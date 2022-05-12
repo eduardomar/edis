@@ -1,0 +1,57 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 4,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "Must always equal PE15."
+  },
+  {
+    "name": "billTypeIndicator",
+    "sec": 2,
+    "status": "C",
+    "start": 5,
+    "end": 5,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "Code identifying the type of Bill of Lading Number. Valid codes are:\n\tR = Regular / Simple Bill of Lading; Shipment Control Number (Mode Truck)\n\tM = Master Bill of Lading;\n\tH = House Bill of Lading; Bill Control Number (Mode Truck)\n\tS = Sub-House Bill of Lading (future use)\n\tT = Express Carrier Tracking Number (air only)\n\tI = In-bond number"
+  },
+  {
+    "name": "issuerCodeOfBillOfLadingNumber",
+    "sec": 3,
+    "status": "C",
+    "start": 6,
+    "end": 9,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "A code representing the issuer of the bill of lading. Space fill for Air shipments."
+  },
+  {
+    "name": "billOfLadingNumber",
+    "sec": 4,
+    "status": "C",
+    "start": 10,
+    "end": 59,
+    "filler": " ",
+    "align": "Left",
+    "max": 50,
+    "description": "The unique identifying number associated to the Bill Type Indicator in this record. For a bill of lading number it is the number as listed on the manifest or the In-Bond number. If the number is less than 50 positions, it is left justified. Do not include spaces, hyphens, slashes or other special characters. Include the AWB prefix for Air Shipments for Master/Simple Bill of Lading and Tracking Numbers."
+  },
+  {
+    "name": "priorNoticeConfirmationNumber",
+    "sec": 5,
+    "status": "C",
+    "start": 60,
+    "end": 80,
+    "filler": " ",
+    "align": "Left",
+    "max": 21,
+    "description": "The confirmation number received from FDA when prior notice is received"
+  }
+]

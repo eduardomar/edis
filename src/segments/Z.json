@@ -1,0 +1,90 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 1,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "Always Z"
+  },
+  {
+    "name": "receiverCode",
+    "sec": 2,
+    "status": "M",
+    "start": 2,
+    "end": 5,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "The CBP assigned code for the ‘data processing’ site/location of the transmitter (i.e., both sender of the batch and recipient of the response)."
+  },
+  {
+    "name": "senderCode",
+    "sec": 3,
+    "status": "M",
+    "start": 6,
+    "end": 8,
+    "filler": " ",
+    "align": "Left",
+    "max": 3,
+    "description": "Transmitter’s identification code (as assigned by CBP)."
+  },
+  {
+    "name": "communicationPassword",
+    "sec": 4,
+    "status": "M",
+    "start": 9,
+    "end": 14,
+    "filler": " ",
+    "align": "Left",
+    "max": 6,
+    "description": "Space fill. A pre-established password used to authorize the transmitter of the data."
+  },
+  {
+    "name": "transmissionDate",
+    "sec": 5,
+    "status": "O",
+    "start": 15,
+    "end": 20,
+    "filler": " ",
+    "align": "Left",
+    "max": 6,
+    "description": "Transmitter’s date of batch transmission. Space fill if not used."
+  },
+  {
+    "name": "filler1",
+    "sec": 6,
+    "status": "M",
+    "start": 21,
+    "end": 37,
+    "filler": " ",
+    "align": "Left",
+    "max": 17,
+    "description": "Space fill."
+  },
+  {
+    "name": "officeCode",
+    "sec": 7,
+    "status": "C",
+    "start": 38,
+    "end": 39,
+    "filler": " ",
+    "align": "Left",
+    "max": 2,
+    "description": "A code agreed upon by the transmitter and CBP representing a specific ‘office’ (or sub-location)."
+  },
+  {
+    "name": "filler2",
+    "sec": 8,
+    "status": "M",
+    "start": 40,
+    "end": 80,
+    "filler": " ",
+    "align": "Left",
+    "max": 41,
+    "description": "Space fill."
+  }
+]
