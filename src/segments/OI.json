@@ -1,0 +1,32 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 2,
+    "filler": " ",
+    "align": "Left",
+    "max": 2
+  },
+  {
+    "name": "filler1",
+    "sec": 2,
+    "status": "M",
+    "start": 3,
+    "end": 10,
+    "filler": " ",
+    "align": "Left",
+    "max": 8
+  },
+  {
+    "name": "commercialDesc",
+    "sec": 3,
+    "status": "M",
+    "start": 11,
+    "end": 80,
+    "filler": " ",
+    "align": "Left",
+    "max": 70
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 4,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "“PG30”"
+  },
+  {
+    "name": "anticipatedArrivalInformation",
+    "sec": 2,
+    "status": "M",
+    "start": 5,
+    "end": 5,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "A (Anticipated arrival information). If entry type = 21, then repeat PG30 and enter F (Foreign Trade Zone)"
+  },
+  {
+    "name": "anticipatedArrivalDateAtPortOfEntry",
+    "sec": 3,
+    "status": "C",
+    "start": 6,
+    "end": 13,
+    "filler": " ",
+    "align": "Left",
+    "max": 8,
+    "description": "A numeric date in MMDDCCYY (month, day, century, year) format. Mandatory if Status = “A”."
+  },
+  {
+    "name": "anticipatedArrivalTimeAtPortOfEntry",
+    "sec": 4,
+    "status": "C",
+    "start": 14,
+    "end": 17,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "Military time HHMM in (hour, minute) format. (Example: 1015, this represents 10:15 a.m.). For midnight, use 2400 (0000 is invalid). Mandatory if Status = “A”."
+  },
+  {
+    "name": "inspectionOrArrivalLocationCode",
+    "sec": 5,
+    "status": "C",
+    "start": 18,
+    "end": 21,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "Only a value of “4” (=FIRMS Code) is allowed for entry type = 21. For entry type not = 21, this field is left blank."
+  },
+  {
+    "name": "inspectionOrArrivalLocation",
+    "sec": 6,
+    "status": "C",
+    "start": 22,
+    "end": 71,
+    "filler": " ",
+    "align": "Left",
+    "max": 50,
+    "description": "Provide FIRMS code here. For valid FIRMS codes, refer to ACS/ACE query. https://www.cbp.gov/document/report/acs-public-firms-code-report"
+  },
+  {
+    "name": "filler1",
+    "sec": 7,
+    "status": "M",
+    "start": 72,
+    "end": 80,
+    "filler": " ",
+    "align": "Left",
+    "max": null,
+    "description": "Space fill"
+  }
+]
