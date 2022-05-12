@@ -10,6 +10,9 @@ const PG10 = require('./PG10.json');
 const PG19 = require('./PG19.json');
 const PG20 = require('./PG20.json');
 const PG21 = require('./PG21.json');
+const PG23 = require('./PG23.json');
+const PG26 = require('./PG26.json');
+const PG27 = require('./PG27.json');
 const WR1 = require('./WR1.json');
 const Y = require('./Y.json');
 const Z = require('./Z.json');
@@ -27,6 +30,9 @@ module.exports = {
   PG19,
   PG20,
   PG21,
+  PG23,
+  PG26,
+  PG27,
   WR1,
   Y,
   Z,

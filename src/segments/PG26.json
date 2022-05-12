@@ -1,0 +1,46 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 4,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "“PG26”"
+  },
+  {
+    "name": "packagingQualifier",
+    "sec": 2,
+    "status": "C",
+    "start": 5,
+    "end": 5,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "This code identifies the level of packaging for the product. Outermost (largest=1) packages to the innermost (smallest=6) packages. Maximum of 6 levels of packaging are allowed. If reporting only one level, show the total quantity for the item and report that as level 1."
+  },
+  {
+    "name": "quantity",
+    "sec": 3,
+    "status": "C",
+    "start": 6,
+    "end": 17,
+    "filler": " ",
+    "align": "Left",
+    "max": 12,
+    "description": "Although quantity is optional, transmitting the quantity accurately and following the rules below will assist in reviewing the product in a timely manner. Failure to transmit the quantity records may result in delays associated with gathering missing information.\nIf entered, this is the total quantity for the packaging level. Must be greater than zero. Two decimal places are implied. Example: 000000000400\nThe base quantity must always be the last quantity transmitted.\nTransmitting Quantity requires transmitting Packaging Qualifier and the Unit of Measure. Last unit transmitted must be a base unit and only one base unit is allowed."
+  },
+  {
+    "name": "unitOfMeasurePackagingLevel",
+    "sec": 4,
+    "status": "C",
+    "start": 18,
+    "end": 22,
+    "filler": " ",
+    "align": "Left",
+    "max": 5,
+    "description": "Type of packaging / packaging level. For example, BX. Cannot be repeated among the PG26 records."
+  }
+]

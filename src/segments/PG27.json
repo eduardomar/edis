@@ -1,0 +1,57 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 4,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "“PG27”"
+  },
+  {
+    "name": "containerNumberEquipmentId",
+    "sec": 2,
+    "status": "O",
+    "start": 5,
+    "end": 24,
+    "filler": " ",
+    "align": "Left",
+    "max": 20,
+    "description": "The number of the shipping container."
+  },
+  {
+    "name": "containerNumberEquipmentId",
+    "sec": 3,
+    "status": "O",
+    "start": 28,
+    "end": 47,
+    "filler": " ",
+    "align": "Left",
+    "max": 20,
+    "description": "The number of the shipping container."
+  },
+  {
+    "name": "containerNumberEquipmentId",
+    "sec": 4,
+    "status": "O",
+    "start": 51,
+    "end": 70,
+    "filler": " ",
+    "align": "Left",
+    "max": 20,
+    "description": "The number of the shipping container."
+  },
+  {
+    "name": "filler1",
+    "sec": 5,
+    "status": "O",
+    "start": 74,
+    "end": 80,
+    "filler": " ",
+    "align": "Left",
+    "max": 7,
+    "description": "Space fill"
+  }
+]

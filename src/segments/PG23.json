@@ -1,0 +1,46 @@
+[
+  {
+    "name": "controlId",
+    "sec": 1,
+    "status": "M",
+    "start": 1,
+    "end": 4,
+    "filler": " ",
+    "align": "Left",
+    "max": 4,
+    "description": "“PG23”"
+  },
+  {
+    "name": "affirmationOfComplianceCode",
+    "sec": 2,
+    "status": "C",
+    "start": 5,
+    "end": 9,
+    "filler": " ",
+    "align": "Left",
+    "max": 5,
+    "description": "A code used to affirm compliance with FDA requirements. Refer to CBP’s ACE CATAIR Appendix PGA (https://www.cbp.gov/document/guidance/ace-appendix-pga) (Food & Drug Affirmation of Compliance Codes) for valid codes."
+  },
+  {
+    "name": "affirmationOfComplianceQualifier",
+    "sec": 3,
+    "status": "C",
+    "start": 10,
+    "end": 39,
+    "filler": " ",
+    "align": "Left",
+    "max": 30,
+    "description": "Text describing the information required by the FDA.\nFor AoC codes with “no qualifier code”, this field is left blank.\nAll other qualifiers must follow the syntax instructions for each code as specified in CBP’s ACE CATAIR Appendix PGA (https://www.cbp.gov/document/guidance/ace-appendix-pga#wcm-survey-target-id)."
+  },
+  {
+    "name": "filler1",
+    "sec": 4,
+    "status": "C",
+    "start": 80,
+    "end": 80,
+    "filler": " ",
+    "align": "Left",
+    "max": 1,
+    "description": "Space fill"
+  }
+]
