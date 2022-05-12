@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src",
-    "dev": "nodemon src"
+    "start": "cross-env TYPE=TRANSLATOR node src",
+    "sender": "cross-env TYPE=SENDER node src",
+    "devTrans": "cross-env TYPE=TRANSLATOR nodemon src",
+    "devSender": "cross-env TYPE=SENDER nodemon src"
   },
   "author": "Lalo",
   "license": "ISC",
   "dependencies": {
     "amqplib": "^0.8.0",
+    "chokidar": "^3.5.3",
+    "cross-env": "^7.0.3",
     "debug": "^4.3.4",
     "dotenv": "^16.0.0",
     "moment": "^2.29.3"

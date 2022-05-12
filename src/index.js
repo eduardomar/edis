@@ -2,18 +2,21 @@ require('dotenv').config();
 
 const debug = require('./utils/debug')();
 const decode = require('./decode');
+const send = require('./send');
 const receive = require('./utils/receive');
+const mkdir = require('./utils/mkdir');
 
 debug('Init');
+const { TYPE, PATH_EDIS_IN, PATH_EDIS_OUT } = process.env;
+
+[PATH_EDIS_IN, PATH_EDIS_OUT].forEach(mkdir);
 
 (async () => {
-  await Promise.all([
-    receive('EDIS_IN_DOCS', 'edis.inbound', async edi => {
+  if (TYPE === 'TRANSLATOR') {
+    await receive(async edi => {
       decode(edi);
-    }),
-
-    // receive('EDIS_OUT_DOCS', 'edis.outbound', async edi => {
-    //   debug('EDIS_OUT_DOCS', 'edis.outbound', { edi });
-    // }),
-  ]);
+    });
+  } else if (TYPE === 'SENDER') {
+    await send();
+  }
 })();
